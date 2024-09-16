@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Shjui Heh (Sophia Heh)</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .about-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .avatar-container {
+        text-align: center;
+        flex: 0 0 300px;
+      }
+      .about-text {
+        flex: 0 0 calc(100% - 350px);
+        text-align: left; /* 改為左對齊 */
+      }
+      .about-heading {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      .about-text p {
+        margin-bottom: 1rem;
+        line-height: 1.6;
+        text-align: left; /* 確保每一行都左對齊 */
+      }
+      @media (max-width: 768px) {
+        .about-content {
+          flex-direction: column;
+          align-items: center;
+        }
+        .avatar-container,
+        .about-text {
+          flex: 0 0 100%;
+        }
+        .about-text {
+          text-align: left; /* 保持左對齊 */
+          margin-top: 2rem;
+        }
+        .about-text p {
+          text-align: left; /* 在小屏幕上也保持左對齊 */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <div class="about-content">
+          <div class="avatar-container">
+            <h2 class="about-heading">ABOUT___</h2>
+            <img src="apple-avatar.png" alt="Sophia Heh" class="avatar" />
+          </div>
+          <div class="about-text">
+            <p>
+              I am a student passionate about technology and innovation, which
+              led me to pursue computer science. Currently, I am studying for a
+              Master's degree in Computer Science at Northeastern University.
+            </p>
+            <p>
+              As an enthusiastic developer, I focus on full-stack software
+              development and data analysis, and I am committed to applying my
+              skills to impactful projects. I enjoy tackling challenges by
+              integrating my technical expertise and providing innovative
+              solutions.
+            </p>
+            <p>
+              Previously, I worked as a financial analyst at SJM, where I gained
+              extensive experience in data analysis, quantitative analysis, and
+              visualization. These skills enable me to provide deep insights
+              during the development process, enhancing the functionality and
+              user experience of applications. These experiences also complement
+              my growing expertise in software engineering.
+            </p>
+            <p>
+              I am actively seeking fall/spring/summer internship opportunities
+              to enhance my skills and participate in challenging projects. I
+              look forward to bringing my technical expertise and passion for
+              software development to your team, creating meaningful work
+              together.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Shjui Heh (Sophia Heh). All rights reserved.</p>
+    </footer>
+  </body>
+</html>
